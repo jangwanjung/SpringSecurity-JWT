@@ -1,5 +1,5 @@
 server:
-  port: 8000
+  port: 8080
   servlet:
     context-path: /
     encoding:
@@ -16,3 +16,14 @@ spring:
     url: jdbc:mysql://localhost:3306/jwt?serverTimezone=Asia/Seoul
     username: jang   #???????? ?????? cos???
     password: 8941  #?????? ?? ????? cos1234? ??
+
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+
+  jwt:
+    secret: vmfhaltmskdlstkfkdgodyroqkfwkdbalroqkfwkdbalaaaaaaaaaaaaaaaabbbbb
